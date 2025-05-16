@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --primary-font: "Open Sans", "sans-serif";
+  --secondary-font: "Playfair Display", "serif";
+  --color-primary: #9c98b9;
+  --color-primary-light: #bab2dc;
+  --color-white: #fff;
+  --color-white-light: #f8f9fa;
+  --color-white-lighter: #f7f7f7;
+  --color-grey: #d8dbdd;
+  --color-royal-blue: #4072dd;
+  --color-vista-blue: #939cd7;
+  --color-Tropical-indigo: #968ccf;
+  scroll-behavior: smooth;
+}
