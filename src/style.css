@@ -9,14 +9,83 @@ html {
 :root {
   --primary-font: "Open Sans", "sans-serif";
   --secondary-font: "Playfair Display", "serif";
-  --color-primary: #9c98b9;
-  --color-primary-light: #bab2dc;
-  --color-white: #fff;
+  --color-primary: #fff;
   --color-white-light: #f8f9fa;
   --color-white-lighter: #f7f7f7;
   --color-grey: #d8dbdd;
-  --color-royal-blue: #4072dd;
-  --color-vista-blue: #939cd7;
-  --color-Tropical-indigo: #968ccf;
+  --color-grey-dark: #797877;
+  --color-black-main: #000000;
+  --color-black-light: #262626;
   scroll-behavior: smooth;
 }
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+}
+
+/* header  setup */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  padding-top: 2rem;
+  align-items: center;
+}
+.header-nav-list {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  font-weight: 600;
+}
+
+.header-nav-list-item a {
+  text-decoration: none;
+}
+
+.header-log-wrapper {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--secondary-font);
+}
+.logo {
+  font-size: 2.5rem;
+}
+.header-log-wrapper p {
+  font-weight: 3900;
+}
+.header-contact {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.header-location {
+  font-weight: 300;
+}
+.header-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .header-contant-location-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-nav {
+    display: none;
+  }
+  .header-menu-icon {
+    display: block;
+    font-size: 5rem;
+  }
+}
+/* header setup end */
