@@ -222,6 +222,102 @@ body {
 }
 /* end of hero section */
 
+/*aboutus */
+.aboutus {
+  background: var(--color-white-lighter);
+  display: flex;
+  flex-direction: column;
+  padding-left: 7rem;
+  justify-content: center;
+  height: 100vh;
+}
+.aboutus-title {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+}
+.aboutus-title-main {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.5rem;
+}
+
+.aboutus-title-main hr {
+  width: 7rem;
+}
+
+.aboutus-title-sub {
+  font-size: 3.5rem;
+  font-weight: 700;
+  width: 60%;
+}
+.aboutus-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.aboutus-content {
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.aboutus-content-btn {
+  text-transform: uppercase;
+  background: transparent;
+  padding: 1rem 2rem;
+  width: 15rem;
+}
+.aboutus-content-summary {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.aboutus-content-summary span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutus-body {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2rem; */
+  }
+  .aboutus-content {
+    padding-inline: 0;
+  }
+  .aboutus {
+    padding-inline: 2rem;
+  }
+
+  .aboutus-title-sub {
+    font-size: 3.5rem;
+    font-weight: 700;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutus-title-main {
+    font-size: 1.5rem;
+  }
+  .aboutus-title-sub {
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 100%;
+  }
+  .aboutus-content-summary {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+}
+
+/*aboutus end*/
+
 /* amenities start */
 .amenities {
   display: flex;
